@@ -4,37 +4,38 @@ This Visual Studio Code extension is inspired by the [laravel-vue-i18n](https://
 
 ## Features
 
-1. **Command "Add Laravel Vue 18n template method"**: This command replaces selected text with `{{$t('{fileName}.{selected text}')}}`. If the selected text contains tags, it will be replaced with the component `<WTrans tag="{fileName}.{selected text}"/>`.
+1. Command "Add Laravel Vue 18n template method": This command replaces selected text with `{{$t('{fileName}.{selected text}')}}`. If the selected text contains tags, it will be replaced with the component `<WTrans tag="{fileName}.{selected text}"/>`.
 
-This command requires you to implement the `WTrans` component, which can look like this:
+    This command requires you to implement the `WTrans` component, which can look like this:
 
-```js
-<template>
-  <span v-html="value" />
-</template>
+    ```js
+    <template>
+      <span v-html="value" />
+    </template>
 
-<script setup>
-import { wTrans } from "laravel-vue-i18n";
+    <script setup>
+    import { wTrans } from "laravel-vue-i18n";
 
-const props = defineProps({
-  tag: { type: String, required: true },
-});
+    const props = defineProps({
+      tag: { type: String, required: true },
+    });
 
-const value = wTrans(props.tag);
-</script>
-```
+    const value = wTrans(props.tag);
+    </script>
+    ```
 
-![feature X](images/template.gif)
+    ![feature X](https://github.com/lemehovskiy/vs-code-laravel-vue-i18n/blob/main/images/template.gif?raw=true)
 
 2. **Command Add Laravel Vue i18n template method with custom key**: This command is similar to the previous one but allows you to enter a custom key instead of using the selected text as a key.
 
 3. **Command Add Laravel Vue 18n wTrans method**: This command replaces selected text with wTrans('app.{selected text}'), stripping quotes around the text. Here's a demo:
 
-![feature X](images/wTrans.gif)
+    ![feature X](https://github.com/lemehovskiy/vs-code-laravel-vue-i18n/blob/main/images/wTrans.gif?raw=true)
 
-4. **Command Add Laravel Vue i18n wTrans method with custom key**: Similar to the previous command, this option lets you enter a custom key instead of using the selected text as a key. 
+4. **Command Add Laravel Vue i18n wTrans method with custom key**: Similar to the previous command, this option lets you enter a custom key instead of using the selected text as a key.
 
 ## How to Use
+
 To use these commands in Visual Studio Code, follow these steps:
 
 1. Select Text: Highlight the text you want to replace with the Laravel Vue i18n method.
@@ -55,4 +56,5 @@ This extension provides the following settings:
 * `laravel-vue-i18n.translationFolderPaths`: Define translation folder paths (default is ["/lang/en", "/lang/uk"]).
 
 ## License
-This project is licensed under the MIT License. See the [LICENSE.md](https://github.com/lemehovskiy/laravel-vue-i18n/blob/main/LICENSE) file for details.
+
+This project is licensed under the MIT License. See the [LICENSE](https://github.com/lemehovskiy/vs-code-laravel-vue-i18n/blob/main/LICENSE) file for details.
