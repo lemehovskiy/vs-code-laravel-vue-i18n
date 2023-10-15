@@ -10,6 +10,7 @@
   "categories": [
     "Other"
   ],
+  "keywords": ["laravel", "vue", "i18n"],
   "repository": {
     "type": "git",
     "url": "https://github.com/lemehovskiy/vs-code-laravel-vue-i18n"
