@@ -3,7 +3,7 @@
   "displayName": "Laravel Vue i18n",
   "publisher": "lemehovskiy",
   "description": "Visual Studio Code extension for Laravel Vue i18n",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "engines": {
     "vscode": "^1.82.0"
   },
