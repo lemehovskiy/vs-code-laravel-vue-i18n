@@ -3,7 +3,7 @@
   "displayName": "Laravel Vue i18n",
   "publisher": "lemehovskiy",
   "description": "Visual Studio Code extension for Laravel Vue i18n",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "engines": {
     "vscode": "^1.82.0"
   },
@@ -11,8 +11,8 @@
     "Other"
   ],
   "repository": {
-      "type": "git",
-      "url": "https://github.com/lemehovskiy/vs-code-laravel-vue-i18n"
+    "type": "git",
+    "url": "https://github.com/lemehovskiy/vs-code-laravel-vue-i18n"
   },
   "activationEvents": [],
   "main": "./dist/extension.js",
@@ -45,7 +45,10 @@
         },
         "laravel-vue-i18n.translationFolderPaths": {
           "type": "array",
-          "default": ["/lang/en", "/lang/uk"],
+          "default": [
+            "/lang/en",
+            "/lang/uk"
+          ],
           "description": "Language files paths"
         }
       }
