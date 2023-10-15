@@ -3,14 +3,18 @@
   "displayName": "Laravel Vue i18n",
   "publisher": "lemehovskiy",
   "description": "Visual Studio Code extension for Laravel Vue i18n",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "engines": {
     "vscode": "^1.82.0"
   },
   "categories": [
     "Other"
   ],
-  "keywords": ["laravel", "vue", "i18n"],
+  "keywords": [
+    "laravel",
+    "vue",
+    "i18n"
+  ],
   "repository": {
     "type": "git",
     "url": "https://github.com/lemehovskiy/vs-code-laravel-vue-i18n"
